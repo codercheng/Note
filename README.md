@@ -1,5 +1,5 @@
-# Note
-a note in alibaba
+### 说明
+在阿里的工作相关临时记录
 
 
 ### 提取rpm包
