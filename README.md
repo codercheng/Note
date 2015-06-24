@@ -24,3 +24,15 @@
 ### 参考
 * [Debugging Information in Separate Files](https://sourceware.org/gdb/onlinedocs/gdb/Separate-Debug-Files.html)
 * [ELF格式文件符号表分析](http://guizhongyun.elastos.org/2013/03/27/elf%E6%A0%BC%E5%BC%8F%E6%96%87%E4%BB%B6%E7%AC%A6%E5%8F%B7%E8%A1%A8%E5%88%86%E6%9E%90/)
+
+-------------
+
+###临时两台机传送文件
+* server
+```
+  nc -l 9898 >out.file
+```
+* client
+```
+  nc -n xx.xx.xx.xx 9898 < in.file
+```
