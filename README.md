@@ -36,3 +36,18 @@
 ```
   nc -n xx.xx.xx.xx 9898 < in.file
 ```
+
+###实用命令查询替换
+* 搜索本目录下所有包含xxxx的文件，列出文件名
+```
+  grep xxxx -rl ./
+```
+* 搜索本目录所有包含xxxx的文件，列出文件名和具体行（慢）
+```
+  grep xxxx -ri ./
+```
+
+* 替换本目录下所有文件中得xxx为yyy
+```
+  sed -i "s/xxx/yyy/g" `grep xxx -rl ./`
+```
